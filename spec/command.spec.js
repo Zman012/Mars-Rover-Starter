@@ -5,8 +5,20 @@ const Command = require('../command.js');
 
 describe("Command class", function() {
 
-  it("throws error if command type is NOT passed into constructor as the first parameter", function() {
+  //test 1
+  test("throws error if command type is NOT passed into constructor as the first parameter", function() {
     expect( function() { new Command();}).toThrow(new Error('Command type required.'));
   });
+
+  //write code in TDD style - write test and then focus on code to make it pass (DRY) 
+  //use IT Statements
+  //test 2 etc
+  test("constructor sets command type", function () {
+    expect( function () { new Command();}); 
+  });
+  //test 3
+  test("constructor sets a value passed in as the 2nd argument", function () {
+  });
+
 
 });
